@@ -1,7 +1,5 @@
 ## Data and R-script behind "When AI turns grant evaluation into a lottery”
 
-This Supporting Information accompanies provides data and R-script underlying the outputs of the paper.
-
 When referring to or reusing these materials, **please cite** the corresponding preprint (will be provided soon) and this repository [<sup>1</sup>](#1).
 
 ### **Content**
