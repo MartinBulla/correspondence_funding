@@ -1,6 +1,6 @@
 ## Data and R-script behind "When AI turns grant evaluation into a lottery”
 
-When referring to or reusing these materials, **please cite** the corresponding preprint (will be provided soon) and this repository [<sup>1</sup>](#1).
+When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v1) and this repository [<sup>1</sup>](#1).
 
 ### **Content**
 
