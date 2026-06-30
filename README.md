@@ -28,7 +28,7 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ### License and reuse
 
-*Author-generated materials* in this repository, including collated data, derived data, scripts, figures, outputs and HTML, are licensed under the Creative Commons Attribution 4.0 International License [CC-BY-4.0](https://github.com/MartinBulla/passerine_song_complexity_v2/blob/main/LICENSE).
+*Author-generated materials* in this repository, including collated data, derived data, scripts, figures, outputs and HTML, are licensed under the Creative Commons Attribution 4.0 International License [CC-BY-4.0](https://github.com/MartinBulla/correspondance_funding/blob/main/LICENSE).
 
 ### Version history
  - v1.0.0: The first public release of the [`correspondance_funding`](https://github.com/MartinBulla/correspondance_funding/) repository, archived for reproducibility of the first preprint version.
