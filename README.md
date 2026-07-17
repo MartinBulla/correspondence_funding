@@ -24,7 +24,7 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 [**Output**](https://github.com/MartinBulla/correspondence_funding/tree/main/Output) folder stores separate files of all outputs used in the manuscript:
  - [HTML](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
- - [Fig_1.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_widht-185mm.png)
+ - [Fig_1.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_width-185mm.png)
  - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-60mm.png)
 
 [**Resources**](https://github.com/MartinBulla/correspondence_funding/tree/main/Resources) folder stores:
