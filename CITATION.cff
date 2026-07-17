@@ -1,0 +1,14 @@
+cff-version: 2.0.0
+title: "Supporting information for 'Can grant evaluation still distinguish scientific excellence?'"
+message: "When referring to or reusing these materials, please cite both the manuscript and this archived repository."
+type: software
+authors:
+  - family-names: Bulla
+    given-names: Martin
+  - family-names: Mikula
+    given-names: Peter
+version: 2.0.0
+date-released: 2026-07-17
+repository-code: "https://github.com/martinbulla/correspondence_funding"
+url: "https://martinbulla.github.io/correspondence_funding/"
+license: CC-BY-4.0
