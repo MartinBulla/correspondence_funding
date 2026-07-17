@@ -1836,7 +1836,7 @@ scientific excellence?</font></h1>
 <h4 class="author"><font size="2">Martin Bulla and Peter
 Mikula</font><br><br><font size="2">created by Martin
 Bulla</font><br></h4>
-<h4 class="date"><font size="1.5">2026-06-30 17:31:06.755947</font></h4>
+<h4 class="date"><font size="1.5">2026-07-17 17:06:45.77656</font></h4>
 
 </div>
 
@@ -1846,89 +1846,103 @@ Bulla</font><br></h4>
 <div id="general-note" class="section level1">
 <h1>General note</h1>
 <p>This HTML accompanies our paper ‘Can grant evaluation still
-distinguish scientific excellence?’ by (1) navigating the repository
-with data and scripts, and (2) showing display items along with the code
-that generated them (accessible by clicking the <code>code</code> button
-at the top right above each display item).</p>
+distinguish scientific excellence?’ by navigating the repository with
+data and scripts, describing the data, and showing display items along
+with the code that generated them (accessible by clicking the
+<code>code</code> button at the top right above each display item).</p>
 <p>When referring to or reusing these materials, <strong>please
 cite</strong> the corresponding <a href="https://doi.org/10.31222/osf.io/d8gcu_v1">preprint</a> and this
 repository <span class="citation">(<a href="#ref-bulla2026">Bulla and
 Mikula 2026</a>)</span>.</p>
 <div id="repository-contents" class="section level2">
 <h2>Repository contents</h2>
-<p><a href="https://martinbulla.github.io/correspondance_funding"><strong>HTML
+<p><a href="https://martinbulla.github.io/correspondence_funding"><strong>HTML
 Supporting information</strong>, including code</a> is generated from
 the following repository structure:</p>
-<p><a href="https://github.com/MartinBulla/correspondance_funding/tree/main/Data"><strong>Data</strong></a>
+<p><a href="https://github.com/MartinBulla/correspondence_funding/tree/main/Data"><strong>Data</strong></a>
 folder stores:</p>
 <ul>
-<li><p><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Data/data_MSCA.csv"><code>data_MSCA.csv</code></a>
-contains EU Marie Skłodowska-Curie Actions Postdoctoral Fellowships
-(MSCA - PF) data with the following columns: <code>Year</code> (of the
-call) and ‘Score’ (threshold); the remaining columns are abbreviations
-for each panel and contain percentages of proposals scoring at or above
-given <code>Score</code> (“ST-CHE” = “Chemistry”, “ST-ECO” =
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_MSCA.csv"><code>data_MSCA.csv</code></a>
+contains the score distribution data for the EU <em>Marie
+Skłodowska-Curie Actions Postdoctoral Fellowships</em> for 2018-2025.
+The data were aggregated from the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/">EU
+Funding &amp; Tenders Portal</a>, which contains the official “Flash
+information on the overall results of the call”. These reports are
+published annually by the European Research Executive Agency following
+the conclusion of the evaluation process. While individual project
+scores are confidential, these public summaries provide the aggregate
+percentages of proposals meeting or exceeding specific quality
+thresholds. The proposals are scored between 0 and 100%.<br><br> The
+provided datset contains the cumulative score distributions for each
+evaluation panel (abbreviated as “ST-CHE” = “Chemistry”, “ST-ECO” =
 “Economics”, “ST-ENG” = “Informat. &amp; Engineering”, “ST-ENV” = “Envi.
 Sci. &amp; Geosciences” “ST-LIF” = “Life Sciences”, “ST-MAT” =
 “Mathematics”, “ST-PHY” = “Physics”, “ST-SOC” = “Social Sci. &amp;
-Humanities”). MSCA Postdoctoral Fellowships are evaluated as full
-proposals submitted jointly by the researcher and host organisation
-through the EU Funding &amp; Tenders Portal. Eligible proposals are
-assessed after the call deadline (September, in case of 2025) by at
-least three independent external experts against the MSCA award
-criteria: Excellence, Impact, and Quality and Efficiency of
-Implementation. Experts first evaluate proposals individually and then
-agree on consensus scores and comments, which form the basis of the
-Evaluation Summary Report and final ranking. The MSCA score
-distributions analysed here therefore represent eligible full proposals
-evaluated through this single-stage full-proposal procedure. The scoring
-distribution data were aggregated from EU Funding &amp; Tenders Portal
-(12), which contains the official “Flash information on the overall
-results of the call”. These reports are published annually by the
-European Research Executive Agency following the conclusion of the
-evaluation process. While individual project scores are confidential,
-these public summaries provide the aggregate percentages of proposals
-meeting or exceeding specific quality thresholds. The proposals are
-scored between 0 and 100%. <strong>To access the raw reports</strong>:
-(i) navigate to the EU Funding &amp; Tenders Portal and go to Calls for
-proposal, (ii) search for the specific call
-(e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data, usually
-under the “Topic conditions and documents” or “Updates”
-section.</p></li>
-<li><p><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Data/data_HFSP.csv"><code>data_HFSP.csv</code></a>
-contains data received from Human Frontiers Science Program Postdoctoral
-Fellowships (HFSP - PF) with columns: <code>year</code> (of the call),
-<code>rank</code> (of the proposal), <code>score</code> (of the
-proposal). Human Frontiers Science Program evaluates the Postdoctoral
-Fellowships through a staged procedure. Applicants first submit a short
-Letter of Intent, from which the review committee selects candidates
-invited to submit a full proposal. The score distributions analysed here
-therefore represent only shortlisted applications that proceeded to full
-evaluation, not the full applicant pool.</p></li>
+Humanities”) and year of the call, with the following columns:
+<code>Year</code> (of the call) and <code>Score</code> (threshold); the
+remaining columns are abbreviations for each panel and contain
+percentages of proposals scoring at or above given
+<code>Score</code>.</li>
 </ul>
-<p><a href="https://github.com/MartinBulla/correspondance_funding/tree/main/R"><strong>R</strong></a>
+<p><strong>To access the raw reports</strong>: (i) navigate to the EU
+Funding &amp; Tenders Portal and go to Calls for proposal, (ii) search
+for the specific call (e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for
+the data, usually under the “Topic conditions and documents” or
+“Updates” section.</p>
+<p><em>Marie Skłodowska-Curie Actions Postdoctoral Fellowships</em> are
+evaluated as full proposals submitted jointly by the researcher and host
+organisation through the EU Funding &amp; Tenders Portal. Eligible
+proposals are assessed after the call deadline (September, in case of
+2025) by at least three independent external experts against the
+<em>Marie Skłodowska-Curie Actions</em> award criteria: Excellence,
+Impact, and Quality and Efficiency of Implementation. Experts first
+evaluate proposals individually and then agree on consensus scores and
+comments, which form the basis of the Evaluation Summary Report and
+final ranking. The <em>Marie Skłodowska-Curie Actions</em> score
+distributions analysed here therefore represent eligible full proposals
+evaluated through this single-stage full-proposal procedure, rather than
+applications pre-selected through an initial short-proposal stage.</p>
+<ul>
+<li><p><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_HFSP.csv"><code>data_HFSP.csv</code></a>
+contains year, rank and score (0-10) of <a href="https://www.hfsp.org/funding/hfsp-funding/research-grants">Research
+Grant</a> proposals, written by the applicants invited to write
+full-blast proposals. Such data are not publicly available, but were
+kindly provided by <a href="https://www.hfsp.org">Human Frontiers
+Science Program</a> for calls with 2024 and 2025 deadlines. We then
+transformed the scores into percentages (10 representing 100% percent)
+and to mimic Fig. 1 data, calculated the percentage of evaluated
+proposals scoring &gt;= each percentage threshold.</p>
+<p>Human Frontiers Science Program evaluates the Postdoctoral
+Fellowships through a staged procedure. Applicants first submit a short
+Letter of Intent (deadline in May), from which the review committee
+selects candidates invited to submit a full proposal (deadline in
+September). The score distributions analysed here therefore represent
+only shortlisted applications that proceeded to full evaluation, not the
+full applicant pool.</p></li>
+</ul>
+<p><a href="https://github.com/MartinBulla/correspondence_funding/tree/main/R"><strong>R</strong></a>
 folder stores scripts used in the analysis:</p>
 <ul>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/R/_runRmarkdown.R"><code>_runRmarkdown.R</code></a>
-generates the HTML <a href="https://martinbulla.github.io/correspondance_funding/">Supporting
-information</a> from <a href="https://github.com/MartinBulla/correspondance_funding/blob/main/R/HTML.R"><code>HTML.R</code></a>.</li>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/R/HTML.R"><code>HTML.R</code></a>
-is the script behind the <a href="https://martinbulla.github.io/correspondance_funding/">HTML</a>,
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R"><code>_runRmarkdown.R</code></a>
+generates the HTML <a href="https://martinbulla.github.io/correspondence_funding/">Supporting
+information</a> from <a href="https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R"><code>HTML.R</code></a>.</li>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R"><code>HTML.R</code></a>
+is the script behind the <a href="https://martinbulla.github.io/correspondence_funding/">HTML</a>,
 containing all code used to generate the paper outputs.</li>
 </ul>
-<p><a href="https://github.com/MartinBulla/correspondance_funding/tree/main/Output"><strong>Output</strong></a>
+<p><a href="https://github.com/MartinBulla/correspondence_funding/tree/main/Output"><strong>Output</strong></a>
 folder stores separate files of all outputs used in the manuscript:</p>
 <ul>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Output/HTML.html">HTML</a></li>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Output/Fig_1_widht-185mm.html">Fig_1.png</a></li>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Output/Fig_2_width-60mm.html">Fig_2.png</a></li>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html">HTML</a></li>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_widht-185mm.html">Fig_1.png</a></li>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-60mm.html">Fig_2.png</a></li>
 </ul>
-<p><a href="https://github.com/MartinBulla/correspondance_funding/tree/main/Resources"><strong>Resources</strong></a>
+<p><a href="https://github.com/MartinBulla/correspondence_funding/tree/main/Resources"><strong>Resources</strong></a>
 folder stores:</p>
 <ul>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Resources/_bib.bib"><code>_bib.bib</code></a>
-bibliography used in the <a href="https://martinbulla.github.io/correspondance_funding/">HTML</a>.</li>
-<li><a href="https://github.com/MartinBulla/correspondance_funding/blob/main/Resources/styles.css"><code>styles.css</code></a>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib"><code>_bib.bib</code></a>
+bibliography used in the <a href="https://martinbulla.github.io/correspondence_funding/">HTML</a>.</li>
+<li><a href="https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css"><code>styles.css</code></a>
 defines graphical parameters for the HTML generation.</li>
 </ul>
 <div id="license-and-reuse" class="section level3">
@@ -1936,12 +1950,12 @@ defines graphical parameters for the HTML generation.</li>
 <p><em>Author-generated materials</em> in this repository, including
 collated data, derived data, scripts, figures, outputs and HTML, are
 licensed under the Creative Commons Attribution 4.0 International
-License <a href="https://github.com/MartinBulla/correspondance_funding/blob/main/LICENSE">CC-BY-4.0</a>.</p>
+License <a href="https://github.com/MartinBulla/correspondence_funding/blob/main/LICENSE">CC-BY-4.0</a>.</p>
 </div>
 <div id="version-history" class="section level3">
 <h3>Version history</h3>
 <ul>
-<li>v1.0.0: The first public release of the <a href="https://github.com/MartinBulla/correspondance_funding/"><code>correspondance_funding</code></a>
+<li>v1.0.0: The first public release of the <a href="https://github.com/MartinBulla/correspondence_funding/"><code>correspondence_funding</code></a>
 repository, archived for reproducibility of the first preprint
 version.</li>
 <li>v2.0.0: Archived for reproducibility of the second preprint
@@ -2182,7 +2196,7 @@ Excellence’ threshold was reached by ~70% of proposals in 2025, compared
 to ~40% in previous years (medians). n<sub>2018</sub> = 9,830
 applications, n<sub>2019</sub> = 9,875, n<sub>2020</sub> = 11,573,
 n<sub>2021</sub> = 8,356, n<sub>2022</sub> = 7,044, n<sub>2023</sub> =
-8,039, n<sub>2024</sub> = 10,360, n<sub>2025</sub> = 17,066
+8,039, n<sub>2024</sub> = 10,360, n<sub>2025</sub> = 17,066.
 <strong>b</strong>, Temporal trend of “excellence saturation”, defined
 as the percentage of proposals achieving a score ≥95%. Data extracted
 from the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/">EU
@@ -2359,7 +2373,7 @@ Europe/Prague
 date
 </td>
 <td style="text-align:left;">
-2026-06-30
+2026-07-17
 </td>
 </tr>
 <tr>
@@ -3319,7 +3333,7 @@ CRAN (R 4.5.2)
 <div id="ref-bulla2026" class="csl-entry">
 Bulla, M., and P. Mikula. 2026. <span>“Supporting Information for ’Can
 Grant Evaluation Still Distinguish Scientific Excellence?’.”</span>
-<em>GitHub</em>. <a href="https://github.com/MartinBulla/correspondance_funding">https://github.com/MartinBulla/correspondance_funding</a>.
+<em>GitHub</em>. <a href="https://github.com/MartinBulla/correspondence_funding">https://github.com/MartinBulla/correspondence_funding</a>.
 </div>
 </div>
 </div>
