@@ -39,6 +39,7 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 
 #' ## Version history
 #'
+# TODO:make available before release - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`):Revision associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2): expanded documentation of funding-scheme evaluation procedures and added PDF figure export.
 #' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
 #' - **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
@@ -52,29 +53,42 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #' [**Data**](`r paste0(repo_tree, "/Data")`) folder stores:
 #'
 
-#' - [`data_MSCA.csv`](`r paste0(repo_blob, "/Data/data_MSCA.csv")`): contains cumulative score distributions for the EU *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* for each evaluation panel (abbreviated as "ST-CHE" = "Chemistry", "ST-ECO" = "Economics", "ST-ENG" = "Informat. & Engineering", "ST-ENV" = "Envi. Sci. & Geosciences", "ST-LIF" = "Life Sciences", "ST-MAT" = "Mathematics", "ST-PHY" = "Physics", "ST-SOC" = "Social Sci. & Humanities") and call year (2018–2025), with the following columns: `Year` (of the call) and `Score` (0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given `Score`.
+#' - [`data_MSCA.csv`](`r paste0(repo_blob, "/Data/data_MSCA.csv")`): contains cumulative freely accessible score distributions for the EU *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* for each evaluation panel (abbreviated as "ST-CHE" = "Chemistry", "ST-ECO" = "Economics", "ST-ENG" = "Informat. & Engineering", "ST-ENV" = "Envi. Sci. & Geosciences", "ST-LIF" = "Life Sciences", "ST-MAT" = "Mathematics", "ST-PHY" = "Physics", "ST-SOC" = "Social Sci. & Humanities") and call year (2018–2025), with the following columns: `Year` (of the call) and `Score` (0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given `Score`.
 #'  <span style="display:block; margin-top:0.4em;">
-#' The data were aggregated from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/), which contains the official "Flash information on the overall results of the call". These reports are published annually by the European Research Executive Agency following the conclusion of the evaluation process. While individual project scores are confidential, these public summaries provide the aggregate percentages of proposals meeting or exceeding specific quality thresholds. The proposals are scored on a scale from 0 to 100%.
+#' The data were aggregated from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/), which contains the official "Flash information on the overall results of the call". These reports are published annually by the European Research Executive Agency following the conclusion of the evaluation process. While individual proposal scores are confidential, these public summaries provide the aggregate percentages of proposals meeting or exceeding specific quality thresholds. The proposals are scored on a scale from 0 to 100%.
 #'  </span>
 #'  <span style="display:block; margin-top:0.4em;">
 #'  To access the raw reports: (i) navigate to the EU Funding & Tenders Portal → Funding → Calls for proposals, (ii) in the Quick search field, enter the specific call name (e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data, usually under the "Topic conditions and documents" or "Updates" section.
 #'  </span>
 #'  <span style="display:block; margin-top:0.4em;">
-#'  *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* are evaluated as full proposals submitted jointly by the researcher and host organisation through the EU Funding & Tenders Portal. Eligible proposals are assessed after the call deadline (in September for the 2025 call) by at least three independent external experts against the *Marie Skłodowska-Curie Actions* award criteria: Excellence, Impact, and Quality and Efficiency of Implementation. Experts first evaluate proposals individually and then agree on consensus scores and comments, which form the basis of the Evaluation Summary Report and final ranking. The *Marie Skłodowska-Curie Actions* score distributions analysed here therefore represent eligible full proposals evaluated through this single-stage full-proposal procedure, rather than applications pre-selected through an initial short-proposal stage.
+#'  **Evaluation procedure.** *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* use a single-stage full-proposal evaluation procedure. Applicants submit jointly with a host organisation and select one of eight main scientific evaluation panels (see above). Eligible proposals are evaluated after the call deadline (in September for the 2025 call) by at least three independent external experts against three award criteria: Excellence, Impact, and Quality and efficiency of the implementation, weighted 50%, 30%, and 20%, respectively. Each criterion is scored from 0 to 5 and the weighted scores form the final score on a 0–100 scale. Experts first evaluate proposals independently and then agree on consensus scores and comments. These evaluations are subsequently quality-checked at panel level, where scores may exceptionally be adjusted. Proposals are then ranked within each evaluation panel in descending order of their final total score.
+#'  </span>
+#'  <span style="display:block; margin-top:0.4em;">
+#' **Scope of analysed data.** The score distributions analysed here therefore represent eligible proposals that underwent this single-stage evaluation procedure, rather than proposals pre-selected through an initial short-proposal stage. Proposals with an overall score of at least 70% are considered positively evaluated; funding then depends on their position in the ranked list and the available budget.
 #'  </span>
 #'
 
-#' - [`data_HFSP.csv`](`r paste0(repo_blob, "/Data/data_HFSP.csv")`): contains anonymized evaluation-score data for Full Proposals submitted to the [Postdoctoral Fellowships](https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships) and [Research Grants](https://www.hfsp.org/funding/hfsp-funding/research-grants) schemes of the [*Human Frontier Science Program*](https://www.hfsp.org) for 2022–2025, with the following columns: `scheme` (funding scheme), `year` (of the call), `rank` (of the application in the given scheme and year) and `score` (evaluation score; 1–10).
+#' - [`data_HFSP.csv`](`r paste0(repo_blob, "/Data/data_HFSP.csv")`): contains non-public, anonymized proposal-level evaluation-score data kindly provided by the [*Human Frontier Science Program*](https://www.hfsp.org) (HFSP) for evaluated Full Proposals submitted to the [Postdoctoral Fellowships](https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships) and [Research Grants](https://www.hfsp.org/funding/hfsp-funding/research-grants) schemes for 2022–2025.
 #'  <span style="display:block; margin-top:0.4em;">
-#'  These non-public data were kindly provided by the *Human Frontier Science Program*. We transformed the scores into percentages, with 10 representing 100%, and, to match Fig. 1, calculated the percentage of evaluated proposals scoring at or above each percentage threshold.
+#' The provided dataset includes:
+#' - `scheme`:  funding scheme (Postdoctoral Fellowships or Research Grants),
+#' - `year`:  award year of the call (2022–2025),
+#' - `rank`: rank of the Full Proposal within the given `scheme` and `year`,
+#' - `score`: final evaluation score assigned by the Review Committee (1-10)
+#'  <span style="display:block; margin-top:0.4em;">
+#'  We transformed the scores into percentages, with 10 representing 100%, and, to match Fig. 1, calculated the percentage of evaluated proposals scoring at or above each percentage threshold.
 #'  </span>
 #'  <span style="display:block; margin-top:0.4em;">
-#'  The Human Frontier Science Program evaluates both schemes through a two-stage procedure. Applicants first submit a short Letter of Intent (deadline in spring), on the basis of which scheme-specific committees select applicants invited to submit a Full Proposal (deadline in September). The score distributions analysed here therefore represent only shortlisted applications that advanced to the Full Proposal stage, not the full applicant pool.
+#'  **Evaluation procedure.** The Human Frontier Science Program uses a two-stage evaluation procedure. Applicants first submit a short Letter of Intent (deadline in spring), which is evaluated by a scheme-specific Reviewer Committee of ~25 members. Each Letter is assessed independently by two reviewers, with individual reviewers typically evaluating 30–70 applications. Letters receive categorical ratings from A to D; reviewers are given approximate guidance on the expected distribution of ratings to reduce differences in scoring tendencies among reviewers.
 #'  </span>
 #'  <span style="display:block; margin-top:0.4em;">
-#'  Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
+#' A subset of applicants is then invited to submit a Full Proposal. At this stage, each proposal is evaluated in detail by three Review Committee members, who present their assessments during the committee meeting. Following discussion, committee members assign numerical scores on a 1–10 scale, and the resulting mean score is used to rank proposals.
+#'  </span>
+#'  <span style="display:block; margin-top:0.4em;">
+#' **Scope of analysed data.** The score distributions analysed here therefore represent only shortlisted applications that advanced to the Full Proposal stage, not the full applicant pool. Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
 #'  </span>
 #'
+
 #' [**R**](`r paste0(repo_tree, "/R")`)  folder stores scripts used in the analysis:
 #'
 #' - [`_runRmarkdown.R`](`r paste0(repo_blob, "/R/_runRmarkdown.R")`) generates this HTML Supporting information from [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`).
@@ -85,7 +99,9 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #'
 #' - [HTML.html](`r paste0(repo_blob, "/Output/HTML.html")`)
 #' - [Fig_1.png](`r paste0(repo_blob, "/Output/Fig_1_width-185mm.png")`)
+#' - [Fig_1.pdf](`r paste0(repo_blob, "/Output/Fig_1_width-185mm.pdf")`)
 #' - [Fig_2.png](`r paste0(repo_blob, "/Output/Fig_2_width-85mm.png")`)
+#' - [Fig_2.pdf](`r paste0(repo_blob, "/Output/Fig_2_width-85mm.pdf")`)
 #'
 
 #' [**Resources**](`r paste0(repo_tree, "/Resources")`) folder stores:
@@ -326,6 +342,15 @@ gg_tagged <- grobTree(
 # EXPORT
 ggsave(here::here("Output/Fig_1_width-185mm.png"),gg_tagged, width = 18.5, height = 5.5, units = 'cm')
 
+ggsave(
+  here::here("Output/Fig_1_width-185mm.pdf"),
+  gg_tagged,
+  width = 18.5,
+  height = 5.5,
+  units = "cm",
+  device = cairo_pdf
+)
+
 knitr::include_graphics(here::here("Output/Fig_1_width-185mm.png"))
 
 #' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026b].
@@ -413,6 +438,15 @@ p_hfsp <- ggplot(
   )
 
 ggsave(here::here("Output/Fig_2_width-85mm.png"),p_hfsp, width = 8.5, height = 4, units = 'cm')
+
+ggsave(
+  here::here("Output/Fig_2_width-85mm.pdf"),
+  p_hfsp,
+  width = 8.5,
+  height = 4,
+  units = "cm",
+  device = cairo_pdf
+)
 
 knitr::include_graphics(here::here("Output/Fig_2_width-85mm.png"))
 

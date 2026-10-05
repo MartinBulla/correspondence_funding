@@ -6,7 +6,7 @@ require(rmarkdown)
 
 # Version currently being prepared.
 # Once this version is released, do not render into it again.
-repo_version <- "v2.0.0"
+repo_version <- "v3.0.0"
 
 # Supply the version to HTML.R
 render_env <- new.env(parent = globalenv())
@@ -48,21 +48,3 @@ for (target in targets) {
     stop("Failed to copy HTML to: ", target)
   }
 }
-
-
-# OLD
-# load
-require(here)
-require(rmarkdown)
-
-# run
-rmarkdown::render(
-  input       = here::here("R", "HTML.R"),
-  output_dir  = here::here("Output"),
-  output_file = "HTML.html"
-)
-rmarkdown::render(
-  input       = here::here("R", "HTML.R"),
-  output_dir  = here::here(),
-  output_file = "index.html"
-)
