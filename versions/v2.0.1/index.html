@@ -1847,7 +1847,7 @@ scientific excellence?</font></h1>
 <h4 class="author"><font size="2">Martin Bulla and Peter
 Mikula</font><br><br><font size="2">created by Martin
 Bulla</font><br></h4>
-<h4 class="date"><font size="1.5">2026-10-05 09:31:10.974374</font></h4>
+<h4 class="date"><font size="1.5">2026-10-05 09:56:49.560171</font></h4>
 
 </div>
 
@@ -1888,16 +1888,17 @@ folder stores:</p>
 <li><p><a href="https://github.com/MartinBulla/correspondence_funding/blob/v2.0.1/Data/data_MSCA.csv"><code>data_MSCA.csv</code></a>:
 contains cumulative freely accessible score distributions for the EU
 <em>Marie Skłodowska-Curie Actions Postdoctoral Fellowships</em> for
-each evaluation panel (abbreviated as “ST-CHE” = “Chemistry”, “ST-ECO” =
-“Economics”, “ST-ENG” = “Informat. &amp; Engineering”, “ST-ENV” = “Envi.
-Sci. &amp; Geosciences”, “ST-LIF” = “Life Sciences”, “ST-MAT” =
-“Mathematics”, “ST-PHY” = “Physics”, “ST-SOC” = “Social Sci. &amp;
-Humanities”) and call year (2018–2025), with the following columns:
-<code>Year</code> (of the call) and <code>Score</code> (0–100%); the
-remaining columns are abbreviations for each panel and contain
-percentages of proposals scoring at or above the given
-<code>Score</code>. <span style="display:block; margin-top:0.4em;"> The
-data were aggregated from the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/">EU
+call years 2018-2025. The analyses presented here use the eight
+Standard/European Fellowship scientific panels (abbreviated as
+<code>ST-CHE</code> = “Chemistry”, <code>ST-ECO</code> = “Economics”,
+<code>ST-ENG</code> = “Informat. &amp; Engineering”, <code>ST-ENV</code>
+= “Envi. Sci. &amp; Geosciences”, <code>ST-LIF</code> = “Life Sciences”,
+<code>ST-MAT</code> = “Mathematics”, <code>ST-PHY</code> = “Physics”,
+<code>ST-SOC</code> = “Social Sci. &amp; Humanities”). <span style="display:block; margin-top:0.4em;"> <strong>The provided dataset
+includes the following columns</strong>:
+Year<code>(of the call) and</code>Score<code>(0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given</code>Score`.
+</span> <span style="display:block; margin-top:0.4em;"> The data were
+aggregated from the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/">EU
 Funding &amp; Tenders Portal</a>, which contains the official “Flash
 information on the overall results of the call”. These reports are
 published annually by the European Research Executive Agency following
@@ -1931,26 +1932,30 @@ represent eligible proposals that underwent this single-stage evaluation
 procedure, rather than proposals pre-selected through an initial
 short-proposal stage. Proposals with an overall score of at least 70%
 are considered positively evaluated; funding then depends on their
-position in the ranked list and the available budget. </span></p></li>
+position in the ranked list and the available budget. We focus on the
+eight Standard/European Fellowship scientific panels because they
+provide the largest and most comparable series across years. The dataset
+also contains Global Fellowship panels (GF-*) and, for earlier Horizon
+2020 calls, the Career Restart (CAR), Reintegration (RI) and Society
+&amp; Enterprise (SE) panels; these represent distinct fellowship
+modalities or special-purpose panels and were therefore not included in
+the analyses. </span></p></li>
 <li><p><a href="https://github.com/MartinBulla/correspondence_funding/blob/v2.0.1/Data/data_HFSP.csv"><code>data_HFSP.csv</code></a>:
 contains non-public, anonymized proposal-level evaluation-score data
 kindly provided by the <a href="https://www.hfsp.org"><em>Human Frontier
 Science Program</em></a> (HFSP) for evaluated Full Proposals submitted
 to the <a href="https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships">Postdoctoral
 Fellowships</a> and <a href="https://www.hfsp.org/funding/hfsp-funding/research-grants">Research
-Grants</a> schemes for 2022–2025.
-<span style="display:block; margin-top:0.4em;"> The provided dataset
-includes:</p></li>
-<li><p><code>scheme</code>: funding scheme (Postdoctoral Fellowships or
-Research Grants),</p></li>
-<li><p><code>year</code>: award year of the call (2022–2025),</p></li>
-<li><p><code>rank</code>: rank of the Full Proposal within the given
-<code>scheme</code> and <code>year</code>,</p></li>
-<li><p><code>score</code>: final evaluation score assigned by the Review
-Committee (1-10) <span style="display:block; margin-top:0.4em;"> We
-transformed the scores into percentages, with 10 representing 100%, and,
-to match Fig. 1, calculated the percentage of evaluated proposals
-scoring at or above each percentage threshold. </span> <span style="display:block; margin-top:0.4em;"> <strong>Evaluation
+Grants</a> schemes for 2022–2025. <span style="display:block; margin-top:0.4em;"> <strong>The provided dataset
+includes the following columns</strong>: <code>scheme</code>: funding
+scheme (Postdoctoral Fellowships or Research Grants), <code>year</code>:
+award year of the call (2022–2025), <code>rank</code>: rank of the Full
+Proposal within the given <code>scheme</code> and <code>year</code>,
+<code>score</code>: final evaluation score assigned by the Review
+Committee (1-10). </span> <span style="display:block; margin-top:0.4em;"> We transformed the scores into
+percentages, with 10 representing 100%, and, to match Fig. 1, calculated
+the percentage of evaluated proposals scoring at or above each
+percentage threshold. </span> <span style="display:block; margin-top:0.4em;"> <strong>Evaluation
 procedure.</strong> The Human Frontier Science Program uses a two-stage
 evaluation procedure. Applicants first submit a short Letter of Intent
 (deadline in spring), which is evaluated by a scheme-specific Reviewer

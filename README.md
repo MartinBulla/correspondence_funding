@@ -33,7 +33,9 @@ When referring to or reusing these materials, **please cite** the corresponding 
 [**Output**](Output/) folder stores separate files of all outputs used in the manuscript:
  - [HTML.html](Output/HTML.html)
  - [Fig_1.png](Output/Fig_1_width-185mm.png)
+ - [Fig_1.pdf](Output/Fig_1_width-185mm.pdf)
  - [Fig_2.png](Output/Fig_2_width-85mm.png)
+ - [Fig_2.pdf](Output/Fig_2_width-85mm.pdf)
 
 [**Resources**](Resources) folder stores:
  - [`_bib.bib`](Resources/_bib.bib) bibliography used in the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
