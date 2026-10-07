@@ -34,12 +34,12 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 
-#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and Supporting information [@bulla2026b].
+#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and Supporting information [@bulla2026bv201].
 #'
 
 #' ## Version history
 #'
-# TODO:make available before release - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`):Revision associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2): expanded documentation of funding-scheme evaluation procedures and added PDF figure export.
+# - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`: Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v3) with expanded documentation of funding-scheme evaluation procedures and PDF figure export.
 #' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
 #' - **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
@@ -353,7 +353,7 @@ ggsave(
 
 knitr::include_graphics(here::here("Output/Fig_1_width-185mm.png"))
 
-#' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026b].
+#' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026bv201].
 #'
 
 #+ F_2, out.width='46%', fig.align='left'
@@ -450,7 +450,7 @@ ggsave(
 
 knitr::include_graphics(here::here("Output/Fig_2_width-85mm.png"))
 
-#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold across application years (2022–2025) and funding schemes (Postdoctoral Fellowships and Research Grants). Proposal scores were originally provided on a 1–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. Score distributions were similar across years and between the two schemes. Postdoctoral Fellowships: n~2022~ = 89 applications at the Full Proposal stage  (out of 393 evaluated Letters of Intent), n~2023~ = 91 (492), n~2024~ = 111 (525), n~2025~ = 117 (663). Research Grants: n~2022~ = 57 (450), n~2023~ = 82 (585), n~2024~ = 65 (669), n~2025~ = 70 (956). Data are available via [@bulla2026b].
+#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold across application years (2022–2025) and funding schemes (Postdoctoral Fellowships and Research Grants). Proposal scores were originally provided on a 1–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. Score distributions were similar across years and between the two schemes. Postdoctoral Fellowships: n~2022~ = 89 applications at the Full Proposal stage  (out of 393 evaluated Letters of Intent), n~2023~ = 91 (492), n~2024~ = 111 (525), n~2025~ = 117 (663). Research Grants: n~2022~ = 57 (450), n~2023~ = 82 (585), n~2024~ = 65 (669), n~2025~ = 70 (956). Data are available via [@bulla2026bv201].
 
 #' <br />
 #'
