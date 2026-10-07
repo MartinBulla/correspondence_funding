@@ -34,13 +34,13 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 
-#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and Supporting information [@bulla2026bv201].
+#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026av201] and Supporting information [@bulla2026bv201].
 #'
 
 #' ## Version history
 #'
-# - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`: Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v3) with expanded documentation of funding-scheme evaluation procedures and PDF figure export.
-#' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
+#' - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`): Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v5) and containing expanded documentation of funding-scheme evaluation procedures, PDF figure export, and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
+#' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
 #' - **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
 #'
