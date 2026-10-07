@@ -5,12 +5,19 @@ require(here)
 require(rmarkdown)
 
 # Version currently being prepared.
-# Once this version is released, do not render into it again.
-repo_version <- "v3.0.0"
+repo_version <- "v2.0.1" # ❗Once this version is released, do not render into it again.
 
 # Supply the version to HTML.R
 render_env <- new.env(parent = globalenv())
 render_env$repo_version <- repo_version
+
+# Create the version-specific Pages directory (if not present)
+version_dir <- here::here("versions", repo_version)
+dir.create(
+  version_dir,
+  recursive = TRUE,
+  showWarnings = FALSE
+)
 
 # Render once
 built_html <- rmarkdown::render(
@@ -19,14 +26,6 @@ built_html <- rmarkdown::render(
   output_file = "HTML.html",
   envir       = render_env,
   clean       = TRUE
-)
-
-# Create the version-specific Pages directory
-version_dir <- here::here("versions", repo_version)
-dir.create(
-  version_dir,
-  recursive = TRUE,
-  showWarnings = FALSE
 )
 
 # Publish the same rendered file as:
