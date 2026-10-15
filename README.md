@@ -2,9 +2,10 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21837111.svg)](https://doi.org/10.5281/zenodo.21837111)
 
-When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v5) and Supporting information [<sup>1</sup>](#1).
+When referring to or reusing these reproducibility materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v5) and this resource [<sup>1</sup>](#1).
 
 ### Version history
+- [v2.0.2](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.2): Minor wording and terminology updates, including renaming the interactive HTML from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
 - [v2.0.1](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.1): Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v5) and containing expanded documentation of funding-scheme evaluation procedures, PDF figure export, and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
 - [v2.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.0): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
 - [v1.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v1.0.0): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
@@ -13,7 +14,7 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ### **Repository contents**
 
-[**HTML Supporting information**](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/), including code, is generated from the following repository structure:
+[**Interactive HTML**](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/), including code, is generated from the following repository structure:
 
 [Data](Data/) folder stores:
 
@@ -32,8 +33,8 @@ When referring to or reusing these materials, **please cite** the corresponding 
   **Scope of analysed data.** The score distributions analysed here therefore represent only shortlisted applications that advanced to the Full Proposal stage, not the full applicant pool. Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
 
 [**R**](R/) folder stores scripts used in the analysis:
- - [`_runRmarkdown.R`](R/_runRmarkdown.R) generates the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/) from [`HTML.R`](R/HTML.R).
- - [`HTML.R`](R/HTML.R) is the script behind the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/), containing all code used to generate the paper outputs.
+ - [`_runRmarkdown.R`](R/_runRmarkdown.R) generates the interactive [HTML materials](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/) from [`HTML.R`](R/HTML.R).
+ - [`HTML.R`](R/HTML.R) is the script behind the interactive [HTML materials](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/), containing all code used to generate the paper outputs.
 
 [**Output**](Output/) folder stores separate files of all outputs used in the manuscript:
  - [HTML.html](Output/HTML.html)
@@ -43,10 +44,10 @@ When referring to or reusing these materials, **please cite** the corresponding 
  - [Fig_2.pdf](Output/Fig_2_width-85mm.pdf)
 
 [**Resources**](Resources) folder stores:
- - [`_bib.bib`](Resources/_bib.bib) bibliography used in the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
- - [`styles.css`](Resources/styles.css) defines graphical parameters for the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/) generation.
+ - [`_bib.bib`](Resources/_bib.bib) bibliography used in the interactive [HTML materials](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/).
+ - [`styles.css`](Resources/styles.css) defines graphical parameters for the interactive [HTML materials](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/) generation.
 
-[**versions**](versions/) stores immutable release-specific HTML Supporting Information.
+[**versions**](versions/) stores immutable release-specific HTML materials.
 
 ### License and reuse
 
@@ -54,4 +55,4 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ***
 
-<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/; [doi:10.5281/zenodo.21837112](https://doi.org/10.5281/zenodo.21837112).
+<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Data, code, and reproducibility materials for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.2/; [doi:10.5281/zenodo.21837112](https://doi.org/10.5281/zenodo.21837112).

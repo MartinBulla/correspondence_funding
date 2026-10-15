@@ -5,7 +5,7 @@ require(here)
 require(rmarkdown)
 
 # Version currently being prepared.
-repo_version <- "v2.0.1" # ❗Once this version is released, do not render into it again.
+repo_version <- "v2.0.2" # ❗Once this version is released, do not render into it again.
 
 # Supply the version to HTML.R
 render_env <- new.env(parent = globalenv())

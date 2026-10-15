@@ -1,5 +1,5 @@
 #' ---
-#' title: <font size="2">Supporting information for</font><br><font size="5">Can grant evaluation still distinguish scientific excellence?</font>
+#' title: <font size="2">Data, code, and reproducibility materials for</font><br><font size="5">Can grant evaluation still distinguish scientific excellence?</font>
 #' author: <font size="2">Martin Bulla and Peter Mikula</font><br><br><font size="2">created by Martin Bulla</font><br>
 #' date: <font size="1.5">`r Sys.time()`</font>
 #' bibliography: ../Resources/_bib.bib
@@ -31,14 +31,14 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 
 #' # General note
 #'
-#' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
+#' This interactive HTML accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' and guides readers through the repository's data and scripts, describes the data in detail, and shows display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 
-#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026av201] and Supporting information [@bulla2026bv201].
+#' When referring to or reusing these reproducibility materials, **please cite** the corresponding preprint [@bulla2026av201] and this resource [@bulla2026bv202]
 #'
 
 #' ## Version history
-#'
+#' - [v2.0.2](r paste0(repo_url, "/tree/v2.0.2")): Minor wording and terminology updates, including renaming the interactive HTML from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
 #' - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`): Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v5) and containing expanded documentation of funding-scheme evaluation procedures, PDF figure export, and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
 #' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
@@ -47,7 +47,7 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 
 #' ## Repository contents
 #'
-#' This HTML Supporting information is generated from the following repository structure:
+#' This interactive HTML is generated from the following repository structure:
 #'
 
 #' [**Data**](`r paste0(repo_tree, "/Data")`) folder stores:
@@ -89,13 +89,13 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #'  </span>
 #'
 
-#' [**R**](`r paste0(repo_tree, "/R")`)  folder stores scripts used in the analysis:
+#' [**R**](`r paste0(repo_tree, "/R")`) folder stores scripts used in the analysis:
 #'
-#' - [`_runRmarkdown.R`](`r paste0(repo_blob, "/R/_runRmarkdown.R")`) generates this HTML Supporting information from [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`).
-#' - [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`) is the script behind this HTML Supporting information, containing all code used to generate the paper outputs.
+#' - [`_runRmarkdown.R`](`r paste0(repo_blob, "/R/_runRmarkdown.R")`) generates this HTML [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`).
+#' - [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`) is the script behind this HTML, containing all code used to generate the paper outputs.
 #'
 
-#' [**Output**](`r paste0(repo_tree, "/Output")`)  folder stores separate files of all outputs used in the manuscript:
+#' [**Output**](`r paste0(repo_tree, "/Output")`) folder stores separate files of all outputs used in the manuscript:
 #'
 #' - [HTML.html](`r paste0(repo_blob, "/Output/HTML.html")`)
 #' - [Fig_1.png](`r paste0(repo_blob, "/Output/Fig_1_width-185mm.png")`)
@@ -106,11 +106,11 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 
 #' [**Resources**](`r paste0(repo_tree, "/Resources")`) folder stores:
 #'
-#' - [`_bib.bib`](`r paste0(repo_blob, "/Resources/_bib.bib")`) bibliography used in this HTML Supporting information
-#' - [`styles.css`](`r paste0(repo_blob, "/Resources/styles.css")`) defines graphical parameters for this HTML Supporting information generation.
+#' - [`_bib.bib`](`r paste0(repo_blob, "/Resources/_bib.bib")`) bibliography used in this HTML
+#' - [`styles.css`](`r paste0(repo_blob, "/Resources/styles.css")`) defines graphical parameters for this HTML generation.
 #'
 
-#' [versions](`r paste0(repo_tree, "/versions")`) stores immutable release-specific HTML Supporting Information.
+#' [versions](`r paste0(repo_tree, "/versions")`) stores immutable release-specific HTML.
 #'
 
 #' ### License and reuse
@@ -353,7 +353,7 @@ ggsave(
 
 knitr::include_graphics(here::here("Output/Fig_1_width-185mm.png"))
 
-#' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026bv201].
+#' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026bv202].
 #'
 
 #+ F_2, out.width='46%', fig.align='left'
@@ -450,7 +450,7 @@ ggsave(
 
 knitr::include_graphics(here::here("Output/Fig_2_width-85mm.png"))
 
-#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold across application years (2022–2025) and funding schemes (Postdoctoral Fellowships and Research Grants). Proposal scores were originally provided on a 1–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. Score distributions were similar across years and between the two schemes. Postdoctoral Fellowships: n~2022~ = 89 applications at the Full Proposal stage  (out of 393 evaluated Letters of Intent), n~2023~ = 91 (492), n~2024~ = 111 (525), n~2025~ = 117 (663). Research Grants: n~2022~ = 57 (450), n~2023~ = 82 (585), n~2024~ = 65 (669), n~2025~ = 70 (956). Data are available via [@bulla2026bv201].
+#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold across application years (2022–2025) and funding schemes (Postdoctoral Fellowships and Research Grants). Proposal scores were originally provided on a 1–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. Score distributions were similar across years and between the two schemes. Postdoctoral Fellowships: n~2022~ = 89 applications at the Full Proposal stage  (out of 393 evaluated Letters of Intent), n~2023~ = 91 (492), n~2024~ = 111 (525), n~2025~ = 117 (663). Research Grants: n~2022~ = 57 (450), n~2023~ = 82 (585), n~2024~ = 65 (669), n~2025~ = 70 (956). Data are available via [@bulla2026bv202].
 
 #' <br />
 #'
