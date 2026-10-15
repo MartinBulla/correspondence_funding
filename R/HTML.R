@@ -38,7 +38,7 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #'
 
 #' ## Version history
-#' - [v2.0.2](r paste0(repo_url, "/tree/v2.0.2")): Minor wording and terminology updates, including renaming the interactive HTML from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
+#' - [v2.0.2](r paste0(repo_url, "/tree/v2.0.2")): Minor wording and terminology updates, including renaming the interactive [HTML](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/) from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
 #' - [v2.0.1](`r paste0(repo_url, "/tree/v2.0.1")`): Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v5) and containing expanded documentation of funding-scheme evaluation procedures, PDF figure export, and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
 #' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).

@@ -5,7 +5,7 @@
 When referring to or reusing these reproducibility materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v5) and this resource [<sup>1</sup>](#1).
 
 ### Version history
-- [v2.0.2](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.2): Minor wording and terminology updates, including renaming the interactive HTML from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
+- [v2.0.2](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.2): Minor wording and terminology updates, including renaming the interactive [HTML](https://martinbulla.github.io/correspondence_funding/versions/v2.0.2) from “Supporting information” to “Data, code, and reproducibility materials”; no changes to data or analyses.
 - [v2.0.1](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.1): Repository version associated with preprint [version 3](https://osf.io/preprints/metaarxiv/d8gcu_v5) and containing expanded documentation of funding-scheme evaluation procedures, PDF figure export, and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.1/).
 - [v2.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.0): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
 - [v1.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v1.0.0): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
